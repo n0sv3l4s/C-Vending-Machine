@@ -1,11 +1,3 @@
-/******************************************************************************
-
-                            Online C Compiler.
-                Code, Compile, Run and Debug C program online.
-Write your code in this editor and press "Run" button to compile and execute it.
-
-*******************************************************************************/
-
 #include <stdio.h>
 #include <time.h>
 
@@ -13,24 +5,16 @@ int main()
 {
     int sel,sur;
 
-/*
-    if(time){
-        printf("Kalhmera sas!\nEpilejte ena apo ta parakatw proionta, pieste ton antistoixo arithmo kai epeita pieste enter.");
-    }
-    else if(time){
-        printf("Kalhspera sas!\nEpilejte ena apo ta parakatw proionta, pieste ton antistoixo arithmo kai epeita pieste enter.");
-    }
-*/
-    printf("Kalhmera sas!\nEpilejte ena apo ta parakatw proionta, pieste ton antistoixo arithmo kai epeita pieste enter.\n\n");
+    printf("Hello!\nPlease choose one of the bellow products, press the corressponding number then press Enter.\n\n");
     a:
-    printf("1.Nero 500ml : 0,5$\n");
-    printf("2.Nero 1l : 1$\n");
-    printf("3.Coca cola 330ml : 1$\n");
-    printf("4.Coca cola 500ml : 1,5$\n");
+    printf("1.Water 500ml : 0,5$\n");
+    printf("2.Water 1l : 1$\n");
+    printf("3.Coca Cola 330ml : 1$\n");
+    printf("4.Coca Cola 500ml : 1,5$\n");
     printf("5.Fanta Orange 330ml : 1$\n");
     printf("6.Fanta Lemon 330ml : 1$\n");
     printf("7.Fanta Blue 330ml : 1$\n");
-    printf("8.Lays Alati : 1,5$\n");
+    printf("8.Lays Salt : 1,5$\n");
     printf("9.Lays Ketchup : 1,5$\n");
     printf("10.Lays BBQ : 1,5$\n");
     
@@ -39,7 +23,7 @@ int main()
 
     if(sel>=1 && sel<=10){}
     else{
-        printf("H epilogh den yparxei.\nEpilejte ena apo ta parakatw proionta, pieste ton antistoixo arithmo kai epeita pieste enter.\n");
+        printf("The product doesn't exist.\nPlease choose one of the bellow products, press the corressponding number then press Enter.\n");
         goto a;
     }
     
@@ -48,20 +32,20 @@ int main()
         case 1:
         {
             b:
-            printf("Epilejate 1.Nero 500ml : 0,5$\nEiste sigouros?Pieste 1 gia nai h 2 gia oxi kai epeita pieste enter.\n");
+            printf("You chose 1.Water 500ml : 0,5$\nAre you sure?Press 1 for yes, 2 for no then press Enter.\n");
             scanf("%d",&sur);
             
             if(sur==1)
             {
-                printf("H synallagh oloklhrothike");
+                printf("Transaction complete");
             }
             else if(sur==2)
             {
-                printf("H synallagh akyrothike");
+                printf("Transaction canceled");
             }
             else
             {
-                printf("Lathos epilogh...\n");
+                printf("Wrong input...\n");
                 goto b;
             }
 
@@ -72,39 +56,40 @@ int main()
         case 2:
         {
             c:
-            printf("Epilejate 2.Nero 1l : 1$\nEiste sigouros?Pieste 1 gia nai h 2 gia oxi kai epeita pieste enter.\n");
+            printf("You chose 2.Nero 1l : 1$\nAre you sure?Press 1 for yes, 2 for no then press Enter.\n");
             scanf("%d",&sur);
             if(sur==1)
             {
-                printf("H synallagh oloklhrothike");
+                printf("Transaction complete");
             }
             else if(sur==2)
             {
-                printf("H synallagh akyrothike");
+                printf("Transaction canceled");
             }
             else
             {
-                printf("Lathos epilogh...\n");
+                printf("Wrong input...\n");
                 goto c;
             }
+
             break;
         }
         case 3:
         {
             d:
-            printf("Epilejate Coca cola 330ml : 1$\nEiste sigouros?Pieste 1 gia nai h 2 gia oxi kai epeita pieste enter.\n");
+            printf("You chose Coca cola 330ml : 1$\nAre you sure?Press 1 for yes, 2 for no then press Enter.\n");
             scanf("%d",&sur);
             if(sur==1)
             {
-                printf("H synallagh oloklhrothike");
+                printf("Transaction complete");
             }
             else if(sur==2)
             {
-                printf("H synallagh akyrothike");
+                printf("Transaction canceled");
             }
             else
             {
-                printf("Lathos epilogh...\n");
+                printf("Wrong input...\n");
                 goto d;
             }
             break;
@@ -112,19 +97,19 @@ int main()
         case 4:
         {
             e:
-            printf("Epilejate 4.Coca cola 500ml : 1,5$\nEiste sigouros?Pieste 1 gia nai h 2 gia oxi kai epeita pieste enter.\n");
+            printf("You chose 4.Coca cola 500ml : 1,5$\nAre you sure?Press 1 for yes, 2 for no then press Enter.\n");
             scanf("%d",&sur);
             if(sur==1)
             {
-                printf("H synallagh oloklhrothike");
+                printf("Transaction complete");
             }
             else if(sur==2)
             {
-                printf("H synallagh akyrothike");
+                printf("Transaction canceled");
             }
             else
             {
-                printf("Lathos epilogh...\n");
+                printf("Wrong input...\n");
                 goto e;
             }
             break;
@@ -132,39 +117,39 @@ int main()
         case 5:
         {
             f:
-            printf("Epilejate 5.Fanta Orange 330ml : 1$\nEiste sigouros?Pieste 1 gia nai h 2 gia oxi kai epeita pieste enter.\n");
+            printf("You chose 5.Fanta Orange 330ml : 1$\nAre you sure?Press 1 for yes, 2 for no then press Enter.\n");
             scanf("%d",&sur);
             if(sur==1)
             {
-                printf("H synallagh oloklhrothike");
+                printf("Transaction complete");
             }
             else if(sur==2)
             {
-                printf("H synallagh akyrothike");
+                printf("Transaction canceled");
             }
             else
             {
-                printf("Lathos epilogh...\n");
+                printf("Wrong input...\n");
                 goto f;
             }
             break;
         }
         case 6:
         {
-            printf("Epilejate 6.Fanta Lemon 330ml : 1$\nEiste sigouros?Pieste 1 gia nai h 2 gia oxi kai epeita pieste enter.\n");
+            printf("You chose 6.Fanta Lemon 330ml : 1$\nAre you sure?Press 1 for yes, 2 for no then press Enter.\n");
             scanf("%d",&sur);
             g:
             if(sur==1)
             {
-                printf("H synallagh oloklhrothike");
+                printf("Transaction complete");
             }
             else if(sur==2)
             {
-                printf("H synallagh akyrothike");
+                printf("Transaction canceled");
             }
-            else 
+            else
             {
-                printf("Lathos epilogh...\n");
+                printf("Wrong input...\n");
                 goto g;
             }
             break;
@@ -172,19 +157,19 @@ int main()
         case 7:
         {
             h:
-            printf("Epilejate 7.Fanta Blue 330ml : 1$\nEiste sigouros?Pieste 1 gia nai h 2 gia oxi kai epeita pieste enter.\n");
+            printf("You chose 7.Fanta Blue 330ml : 1$\nAre you sure?Press 1 for yes, 2 for no then press Enter.\n");
             scanf("%d",&sur);
             if(sur==1)
             {
-                printf("H synallagh oloklhrothike");
+                printf("Transaction complete");
             }
             else if(sur==2)
             {
-                printf("H synallagh akyrothike");
+                printf("Transaction canceled");
             }
             else
             {
-                printf("Lathos epilogh...\n");
+                printf("Wrong input...\n");
                 goto h;
             }
             break;
@@ -192,19 +177,19 @@ int main()
         case 8:
         {
             i:
-            printf("Epilejate 8.Lays Alati : 1,5$\nEiste sigouros?Pieste 1 gia nai h 2 gia oxi kai epeita pieste enter.\n");
+            printf("You chose 8.Lays Alati : 1,5$\nAre you sure?Press 1 for yes, 2 for no then press Enter.\n");
             scanf("%d",&sur);
             if(sur==1)
             {
-                printf("H synallagh oloklhrothike");
+                printf("Transaction complete");
             }
             else if(sur==2)
             {
-                printf("H synallagh akyrothike");
+                printf("Transaction canceled");
             }
-            else 
+            else
             {
-                printf("Lathos epilogh...\n");
+                printf("Wrong input...\n");
                 goto i;
             }
             break;
@@ -212,19 +197,19 @@ int main()
         case 9:
         {
             j:
-            printf("Epilejate 9.Lays Ketchup : 1,5$\nEiste sigouros?Pieste 1 gia nai h 2 gia oxi kai epeita pieste enter.\n");
+            printf("You chose 9.Lays Ketchup : 1,5$\nAre you sure?Press 1 for yes, 2 for no then press Enter.\n");
             scanf("%d",&sur);
             if(sur==1)
             {
-                printf("H synallagh oloklhrothike");
+                printf("Transaction complete");
             }
             else if(sur==2)
             {
-                printf("H synallagh akyrothike");
+                printf("Transaction canceled");
             }
             else
             {
-                printf("Lathos epilogh...\n");
+                printf("Wrong input...\n");
                 goto j;
             }
             break;
@@ -232,19 +217,19 @@ int main()
         case 10:
         {
             k:
-            printf("Epilejate 10.Lays BBQ : 1,5$\nEiste sigouros?Pieste 1 gia nai h 2 gia oxi kai epeita pieste enter.\n");
+            printf("You chose 10.Lays BBQ : 1,5$\nAre you sure?Press 1 for yes, 2 for no then press Enter.\n");
             scanf("%d",&sur);
             if(sur==1)
             {
-                printf("H synallagh oloklhrothike");
+                printf("Transaction complete");
             }
             else if(sur==2)
             {
-                printf("H synallagh akyrothike");
+                printf("Transaction canceled");
             }
-            else 
+            else
             {
-                printf("Lathos epilogh...\n");
+                printf("Wrong input...\n");
                 goto k;
             }
             break;
